@@ -1,23 +1,13 @@
-﻿Build started 22-03-2017 13:31:05.
+﻿Build started 22-03-2017 13:45:59.
      1>Project "D:\IIT\Extra-Acads\HCI\Working Code\Codes\C++\GyroData - Copy\GyroData.vcxproj" on node 2 (build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>InitializeBuildStatus:
          Creating "../build/GyroData/GyroData.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../build/GyroData/" /Fd"../build/GyroData/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>main.cpp(243): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>main.cpp(244): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>main.cpp(262): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>main.cpp(263): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../../bin/win32\\GyroData.exe" /NOLOGO /LIBPATH:../../../lib/win32 edk.lib glut32.lib /MANIFEST /ManifestFile:"../build/GyroData/GyroData.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\IIT\Extra-Acads\HCI\Working Code\bin\win32\GyroData.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../../bin/win32\GyroData.lib" /MACHINE:X86 ../build/GyroData/main.obj
-         ../build/GyroData/tserial.obj
-         Generating code
-         Finished generating code
+         All outputs are up-to-date.
          GyroData.vcxproj -> D:\IIT\Extra-Acads\HCI\Working Code\Codes\C++\GyroData - Copy\../../../bin/win32\GyroData.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../../bin/win32\\GyroData.exe;#1" /manifest ../build/GyroData/GyroData.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "../build/GyroData/GyroData.unsuccessfulbuild".
          Touching "../build/GyroData/GyroData.lastbuildstate".
@@ -25,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.44
+Time Elapsed 00:00:00.04
