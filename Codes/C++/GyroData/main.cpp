@@ -232,7 +232,7 @@ void updateDisplay(void)
 
    double val = sqrt((float)(xmax*xmax + ymax*ymax));
   
-    std::cout <<"xmax : " << xmax <<" ; ymax : " << ymax << std::endl;
+    std::cout <<"xmax : " << (xmax*180/10000) <<" ; ymax : " << ymax << std::endl;
 
    
    if( val >= maxRadius )

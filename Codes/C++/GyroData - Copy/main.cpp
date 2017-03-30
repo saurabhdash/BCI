@@ -46,7 +46,7 @@
 //#include <thread>
 #include <vector>
 #include "bot_control.h"
-
+serial comm;
 using std::cout;
 using std::cerr;
 using std::unique_ptr;
@@ -233,9 +233,12 @@ void updateDisplay(void)
 
    double val = sqrt((float)(xmax*xmax + ymax*ymax));
   
-    std::cout <<"xmax : " << xmax <<" ; ymax : " << ymax << std::endl;
-
-   
+    std::cout <<"xmax : " << xmax*45/10000 <<" ; ymax : " << ymax << std::endl;
+	if((xmax*45/10000)+120 > 0){
+		comm.send_data('g');
+	comm.send_data(static_cast<__int8>(xmax*45/10000)+120);
+	}
+	   
    if( val >= maxRadius )
    {
 	   changeXY(1);	
@@ -322,8 +325,8 @@ double GetTickCount()
     return ts.tv_sec * 1000.0 + ts.tv_nsec / 1000000.0;
 }
 #endif
-#define PORT "COM3"
-#define BAUDRATE 9600
+#define PORT "COM6"
+#define BAUDRATE 115200
 /* 
  *  Request double buffer display mode.
  *  Register mouse input callback functions
@@ -332,7 +335,7 @@ double GetTickCount()
 int main(int argc, char** argv)
 {
 	//serial comm;
-	//comm.startDevice(PORT, BAUDRATE);
+	comm.startDevice(PORT, BAUDRATE);
 	//while(1)
 		//comm.send_data('j');
 	EmoEngineEventHandle hEvent = IEE_EmoEngineEventCreate();
